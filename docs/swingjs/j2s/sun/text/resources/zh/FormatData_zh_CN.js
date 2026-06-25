@@ -1,0 +1,15 @@
+(function(){var P$=Clazz.newPackage("sun.text.resources.zh"),I$=[];
+/*c*/var C$=Clazz.newClass(P$, "FormatData_zh_CN", null, 'sun.util.resources.ParallelListResourceBundle');
+
+C$.$clinit$=2;
+
+Clazz.newMeth(C$, '$init$', function () {
+},1);
+
+Clazz.newMeth(C$, 'getContents$',  function () {
+return Clazz.array(java.lang.Object, -2, [Clazz.array(java.lang.Object, -1, ["NumberPatterns", Clazz.array(String, -1, ["#,##0.###;-#,##0.###", "\u00a4#,##0.00;-\u00a4#,##0.00", "#,##0%"])]), Clazz.array(java.lang.Object, -1, ["DateTimePatternChars", "GanjkHmsSEDFwWxhKzZ"])]);
+});
+
+Clazz.newMeth(C$);
+})();
+;Clazz.setTVer('5.0.1-v7');//Created 2025-12-19 08:25:34 Java2ScriptVisitor version 5.0.1-v7 net.sf.j2s.core.jar version 5.0.1-v7

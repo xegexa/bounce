@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Bounce</title>
+  <script src="swingjs/swingjs2.js"></script>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 1rem 1.25rem 2rem;
+      background: #16161d;
+      color: #e8e8ec;
+      line-height: 1.45;
+    }
+    #page {
+      max-width: 48rem;
+      margin: 0 auto;
+    }
+    #page h1 {
+      margin: 0 0 0.35rem;
+      font-size: 1.35rem;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+      text-align: center;
+    }
+    #page .note {
+      margin: 0 0 1rem;
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+    /*
+     * Match Canvas.GAME_PIXEL_* + EMBED_FRAME_MENU_EXTRA (javax.microedition.lcdui.Canvas).
+     * If DISPLAY_SCALE changes, update these and Info.width / Info.height below.
+     */
+    :root {
+      --game-px-w: 400px;
+      --game-px-h: 432px;
+      --embed-menu-extra: 32px;
+    }
+  </style>
+  <script>
+    if (!self.SwingJS)
+      alert("swingjs2.js was not found. It needs to be in the swingjs folder next to this page:\n" + document.location.href);
+    Info = {
+      code: null,
+      main: "com.nokia.mid.appl.boun.Bounce",
+      core: "NONE",
+      width: 400,
+      height: 432,
+      readyFunction: null,
+      j2sPath: "swingjs/j2s",
+      console: "none",
+      allowjavascript: true,
+      isResizable: false,
+      disableInitialConsole: true,
+      disableJ2SLoadMonitor: true
+    };
+  </script>
+</head>
+<body>
+  <div id="page">
+    <h1>Bounce</h1>
+    <div id="testApplet-bounce-div"></div>
+  </div>
+  <script>
+    SwingJS.getApplet("testApplet", Info);
+  </script>
+</body>
+</html>
